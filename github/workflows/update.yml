@@ -1,9 +1,9 @@
-name: Update site every 15 minutes
+name: Update site every hour
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # ogni 15 minuti
-  workflow_dispatch:       # consente anche avvio manuale
+    - cron: '0 * * * *'  # ogni ora esatta
+  workflow_dispatch:       # permette l'avvio manuale
 
 jobs:
   build:
